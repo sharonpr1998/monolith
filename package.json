@@ -4,6 +4,17 @@
   "description": "",
   "main": "server.js",
   "type": "module",
+  "imports": {
+    "#src/*": "./src/*",
+    "#constants/*": "./src/constants/*",
+    "#config/*": "./src/config/*",
+    "#controllers/*": "./src/controllers/*",
+    "#middleware/*": "./src/middleware/*",
+    "#models/*": "./src/models/*",
+    "#repositories/*": "./src/repositories/*",
+    "#routes/*": "./src/routes/*",
+    "#services/*": "./src/services/*"
+  },
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js"
@@ -14,7 +25,8 @@
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^18.0.6",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "module-alias": "^2.3.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"

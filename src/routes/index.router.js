@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { MESSAGE } from "../constants/response-message.contants.js";
 
-import userRouter from "./user-routes/user.router.js";
+// import userRouter from "./user-routes/user.router.js";
 
 const indexRouter = Router();
 
@@ -29,7 +29,7 @@ indexRouter.get("/test", (req, res) => {
 
 // User Management
 
-indexRouter.use('/user', userRouter)
+// indexRouter.use('/user', userRouter)
 
 
 
